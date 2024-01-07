@@ -147,7 +147,7 @@
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\logo_sym (4).png"/>
+                  <Image iconType="3" name="/icons/logo_sym (4).png"/>
                 </Property>
               </Properties>
             </Component>
@@ -637,6 +637,9 @@
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Images/nagaraya.png"/>
+                                </Property>
                                 <Property name="text" type="java.lang.String" value="NAGARAYA"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                   <Border info="null"/>
@@ -660,7 +663,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\dingdong.png"/>
+                                  <Image iconType="3" name="/Images/dingdong.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="DING DONG"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -685,7 +688,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\boybawang.png"/>
+                                  <Image iconType="3" name="/Images/boybawang.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BOY BAWANG"/>
                                 <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -707,7 +710,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\image 7 (3) (1).png"/>
+                                  <Image iconType="3" name="/Images/cracklings.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="CRACKLINGS"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -809,7 +812,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\monster.png"/>
+                                  <Image iconType="3" name="/Images/monster.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="MONSTER"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -834,7 +837,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\bang.png"/>
+                                  <Image iconType="3" name="/Images/bang.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BANG"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -859,7 +862,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\pocarisweat.png"/>
+                                  <Image iconType="3" name="/Images/pocarisweat.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="POCARI SWEAT"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -884,7 +887,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\royal.png"/>
+                                  <Image iconType="3" name="/Images/royal.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="ROYAL"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -909,7 +912,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\sprite.png"/>
+                                  <Image iconType="3" name="/Images/sprite.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="SPRITE"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -934,7 +937,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\tropicana.png"/>
+                                  <Image iconType="3" name="/Images/tropicana.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="TROPICANA"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -959,7 +962,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\smartc.png"/>
+                                  <Image iconType="3" name="/Images/smartc.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="SMART - C"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -984,7 +987,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\minutemaid.png"/>
+                                  <Image iconType="3" name="/Images/minutemaid.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="MINUTE MAID"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1101,7 +1104,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\airpurifier.png"/>
+                                  <Image iconType="3" name="/Images/airpurifier.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="AIR PURIFIER"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1126,7 +1129,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\mop.png"/>
+                                  <Image iconType="3" name="/Images/mop.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="MOP"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1151,7 +1154,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\casserole.png"/>
+                                  <Image iconType="3" name="/Images/casserole.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="CASSEROLE"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1176,7 +1179,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\potbundle.png"/>
+                                  <Image iconType="3" name="/Images/potbundle.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="POT BUNDLE"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1201,7 +1204,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\dishwashingliquid.png"/>
+                                  <Image iconType="3" name="/Images/dishwashingliquid.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="DISHWASHING LIQUID"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1226,7 +1229,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\cuttingboard.png"/>
+                                  <Image iconType="3" name="/Images/cuttingboard.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="CUTTING BOARD"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1251,7 +1254,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\scrub.png"/>
+                                  <Image iconType="3" name="/Images/scrub.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="SCRUB"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1276,7 +1279,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\carpet.png"/>
+                                  <Image iconType="3" name="/Images/carpet.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="CARPET"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1301,7 +1304,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\containers.png"/>
+                                  <Image iconType="3" name="/Images/containers.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="CONTAINERS"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1326,7 +1329,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\tissue.png"/>
+                                  <Image iconType="3" name="/Images/tissue.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="TISSUE"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1351,7 +1354,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\hanger.png"/>
+                                  <Image iconType="3" name="/Images/hanger.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="HANGER"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1376,7 +1379,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\knives.png"/>
+                                  <Image iconType="3" name="/Images/knives.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="KNIVES"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1493,7 +1496,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\babysocks.png"/>
+                                  <Image iconType="3" name="/Images/babysocks.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BABY SOCKS"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1518,7 +1521,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\babyshoes.png"/>
+                                  <Image iconType="3" name="/Images/babyshoes.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BABY SHOES"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1543,7 +1546,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\babystroller.png"/>
+                                  <Image iconType="3" name="/Images/babystroller.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BABY STROLLER"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1568,7 +1571,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\babycrib.png"/>
+                                  <Image iconType="3" name="/Images/babycrib.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BABY CRIB"/>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1593,7 +1596,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\babysoap.png"/>
+                                  <Image iconType="3" name="/Images/babysoap.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BABY SOAP"/>
                                 <Property name="autoscrolls" type="boolean" value="true"/>
@@ -1619,7 +1622,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\babyclothes.png"/>
+                                  <Image iconType="3" name="/Images/babyclothes.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BABY CLOTHES"/>
                                 <Property name="autoscrolls" type="boolean" value="true"/>
@@ -1645,7 +1648,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\babybottles.png"/>
+                                  <Image iconType="3" name="/Images/babybottles.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BABY BOTTLE"/>
                                 <Property name="autoscrolls" type="boolean" value="true"/>
@@ -1671,7 +1674,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\babyteether.png"/>
+                                  <Image iconType="3" name="/Images/babyteether.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BABY TEETHER"/>
                                 <Property name="autoscrolls" type="boolean" value="true"/>
@@ -1697,7 +1700,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\babydiapers.png"/>
+                                  <Image iconType="3" name="/Images/babydiapers.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BABY DIAPERS"/>
                                 <Property name="autoscrolls" type="boolean" value="true"/>
@@ -1723,7 +1726,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\babyspoon.png"/>
+                                  <Image iconType="3" name="/Images/babyspoon.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BABY SPOON"/>
                                 <Property name="autoscrolls" type="boolean" value="true"/>
@@ -1749,7 +1752,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\babymilk.png"/>
+                                  <Image iconType="3" name="/Images/babymilk.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BABY MILK"/>
                                 <Property name="autoscrolls" type="boolean" value="true"/>
@@ -1775,7 +1778,7 @@
                                   <Font name="Segoe UI Historic" size="14" style="1"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\babytoy.png"/>
+                                  <Image iconType="3" name="/Images/babytoy.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="BABY TOY"/>
                                 <Property name="autoscrolls" type="boolean" value="true"/>
