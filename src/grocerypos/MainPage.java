@@ -118,6 +118,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Logout");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -156,7 +161,6 @@ public class MainPage extends javax.swing.JFrame {
         );
 
         POSButton.setBackground(new java.awt.Color(204, 204, 204));
-        POSButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\si_Wallet_detailed (3).png")); // NOI18N
         POSButton.setText("POS");
         POSButton.setBorder(null);
         POSButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -978,7 +982,7 @@ public class MainPage extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(ProductPanels, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                     .addComponent(jLayeredPane1))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         MenuPanels.add(POS, "card2");
@@ -1190,6 +1194,13 @@ public class MainPage extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Logout logout = new Logout();
+    // Call the logout method
+        logout.setVisible(true);
+        this.dispose(); 
+    }//GEN-LAST:event_jButton1ActionPerformed
     /**
      * @param args the command line arguments
      */
