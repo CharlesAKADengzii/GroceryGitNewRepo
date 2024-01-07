@@ -64,7 +64,7 @@ public class Login extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 550, 190, 70));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 550, 200, 80));
 
         jButton1.setBackground(new java.awt.Color(94, 94, 94));
         jButton1.setForeground(new java.awt.Color(94, 94, 94));

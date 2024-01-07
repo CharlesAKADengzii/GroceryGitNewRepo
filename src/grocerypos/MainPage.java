@@ -118,11 +118,6 @@ public class MainPage extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Logout");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
 
         jLabel3.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -141,7 +136,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(348, 348, 348)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(522, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -161,31 +156,41 @@ public class MainPage extends javax.swing.JFrame {
         );
 
         POSButton.setBackground(new java.awt.Color(204, 204, 204));
-        POSButton.setText("POS");
+        POSButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\psde1.png")); // NOI18N
         POSButton.setBorder(null);
+        POSButton.setBorderPainted(false);
+        POSButton.setContentAreaFilled(false);
         POSButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        POSButton.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         POSButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 POSButtonActionPerformed(evt);
             }
         });
 
-        IMSButton.setText("IMS");
+        IMSButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imsd.png")); // NOI18N
+        IMSButton.setBorder(null);
+        IMSButton.setBorderPainted(false);
+        IMSButton.setContentAreaFilled(false);
         IMSButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 IMSButtonActionPerformed(evt);
             }
         });
 
-        ADMButton.setText("ADM");
+        ADMButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\admd.png")); // NOI18N
+        ADMButton.setBorder(null);
+        ADMButton.setBorderPainted(false);
+        ADMButton.setContentAreaFilled(false);
         ADMButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ADMButtonActionPerformed(evt);
             }
         });
 
-        SETButton.setText("SET");
+        SETButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\setd.png")); // NOI18N
+        SETButton.setBorder(null);
+        SETButton.setBorderPainted(false);
+        SETButton.setContentAreaFilled(false);
         SETButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SETButtonActionPerformed(evt);
@@ -196,8 +201,9 @@ public class MainPage extends javax.swing.JFrame {
 
         POS.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jSnacks.setBackground(new java.awt.Color(255, 102, 0));
+        jSnacks.setBackground(new java.awt.Color(0, 153, 102));
         jSnacks.setFont(new java.awt.Font("Segoe UI Symbol", 1, 14)); // NOI18N
+        jSnacks.setForeground(new java.awt.Color(255, 255, 255));
         jSnacks.setText("Snacks");
         jSnacks.setMaximumSize(new java.awt.Dimension(112, 36));
         jSnacks.setMinimumSize(new java.awt.Dimension(112, 36));
@@ -982,7 +988,7 @@ public class MainPage extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(ProductPanels, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                     .addComponent(jLayeredPane1))
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         MenuPanels.add(POS, "card2");
@@ -1042,17 +1048,11 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(BackgroundLayout.createSequentialGroup()
                 .addGroup(BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(BackgroundLayout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(SETButton))
-                    .addGroup(BackgroundLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(ADMButton))
-                    .addGroup(BackgroundLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(IMSButton))
-                    .addComponent(POSButton))
-                .addGap(31, 31, 31)
+                    .addComponent(IMSButton, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(SETButton, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(POSButton, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(ADMButton, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(0, 0, 0)
                 .addComponent(MenuPanels, javax.swing.GroupLayout.PREFERRED_SIZE, 1215, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -1060,20 +1060,19 @@ public class MainPage extends javax.swing.JFrame {
             BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BackgroundLayout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addGroup(BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BackgroundLayout.createSequentialGroup()
-                        .addComponent(POSButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(IMSButton)
-                        .addGap(74, 74, 74)
-                        .addComponent(ADMButton)
-                        .addGap(36, 36, 36)
-                        .addComponent(SETButton)
-                        .addGap(118, 118, 118))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BackgroundLayout.createSequentialGroup()
-                        .addComponent(MenuPanels, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15))))
+                        .addComponent(POSButton, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(IMSButton, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ADMButton, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SETButton, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(98, 98, 98))
+                    .addComponent(MenuPanels, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1097,10 +1096,15 @@ public class MainPage extends javax.swing.JFrame {
         IMS.setVisible(false);
         ADM.setVisible(false);
         SET.setVisible(false);
-        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\pos.png");
+        
+        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\psde1.png");
         POSButton.setIcon(icon);
-        POSButton.setBackground(Color.green);
-        POSButton.setForeground(Color.WHITE);
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imsd.png");
+        IMSButton.setIcon(icon1);
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\admd.png");
+        ADMButton.setIcon(icon2);
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\setd.png");
+        SETButton.setIcon(icon3);
         
     }//GEN-LAST:event_POSButtonActionPerformed
 
@@ -1174,6 +1178,15 @@ public class MainPage extends javax.swing.JFrame {
         IMS.setVisible(true);
         ADM.setVisible(false);
         SET.setVisible(false);
+        
+        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\posd.png");
+        POSButton.setIcon(icon);
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imse.png");
+        IMSButton.setIcon(icon1);
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\admd.png");
+        ADMButton.setIcon(icon2);
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\setd.png");
+        SETButton.setIcon(icon3);
     }//GEN-LAST:event_IMSButtonActionPerformed
 
     private void ADMButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ADMButtonActionPerformed
@@ -1181,6 +1194,15 @@ public class MainPage extends javax.swing.JFrame {
         IMS.setVisible(false);
         ADM.setVisible(true);
         SET.setVisible(false);
+        
+        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\posd.png");
+        POSButton.setIcon(icon);
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imsd.png");
+        IMSButton.setIcon(icon1);
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\amde.png");
+        ADMButton.setIcon(icon2);
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\setd.png");
+        SETButton.setIcon(icon3);
     }//GEN-LAST:event_ADMButtonActionPerformed
 
     private void SETButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SETButtonActionPerformed
@@ -1188,19 +1210,21 @@ public class MainPage extends javax.swing.JFrame {
         IMS.setVisible(false);
         ADM.setVisible(false);
         SET.setVisible(true);
+        
+        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\posd.png");
+        POSButton.setIcon(icon);
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imsd.png");
+        IMSButton.setIcon(icon1);
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\admd.png");
+        ADMButton.setIcon(icon2);
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\sete.png");
+        SETButton.setIcon(icon3);
     }//GEN-LAST:event_SETButtonActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        Logout logout = new Logout();
-    // Call the logout method
-        logout.setVisible(true);
-        this.dispose(); 
-    }//GEN-LAST:event_jButton1ActionPerformed
     /**
      * @param args the command line arguments
      */
