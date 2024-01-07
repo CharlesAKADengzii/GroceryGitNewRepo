@@ -5,6 +5,7 @@
 package grocerypos;
 
 import java.awt.Color;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -80,6 +81,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton26 = new javax.swing.JButton();
         jButton27 = new javax.swing.JButton();
         jButton28 = new javax.swing.JButton();
+        jButton29 = new javax.swing.JButton();
+        jButton30 = new javax.swing.JButton();
+        jButton31 = new javax.swing.JButton();
+        jButton32 = new javax.swing.JButton();
+        jButton33 = new javax.swing.JButton();
         BabyNeedsScroll = new javax.swing.JScrollPane();
         BabyNeedsPage = new javax.swing.JPanel();
         jButton34 = new javax.swing.JButton();
@@ -106,7 +112,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\logo_sym (4).png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/logo_sym (4).png"))); // NOI18N
 
         jButton1.setBackground(new java.awt.Color(0, 153, 102));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -130,7 +136,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(348, 348, 348)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(522, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,32 +156,41 @@ public class MainPage extends javax.swing.JFrame {
         );
 
         POSButton.setBackground(new java.awt.Color(204, 204, 204));
-        POSButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\si_Wallet_detailed (3).png")); // NOI18N
-        POSButton.setText("POS");
+        POSButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\psde1.png")); // NOI18N
         POSButton.setBorder(null);
+        POSButton.setBorderPainted(false);
+        POSButton.setContentAreaFilled(false);
         POSButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        POSButton.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         POSButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 POSButtonActionPerformed(evt);
             }
         });
 
-        IMSButton.setText("IMS");
+        IMSButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imsd.png")); // NOI18N
+        IMSButton.setBorder(null);
+        IMSButton.setBorderPainted(false);
+        IMSButton.setContentAreaFilled(false);
         IMSButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 IMSButtonActionPerformed(evt);
             }
         });
 
-        ADMButton.setText("ADM");
+        ADMButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\admd.png")); // NOI18N
+        ADMButton.setBorder(null);
+        ADMButton.setBorderPainted(false);
+        ADMButton.setContentAreaFilled(false);
         ADMButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ADMButtonActionPerformed(evt);
             }
         });
 
-        SETButton.setText("SET");
+        SETButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\setd.png")); // NOI18N
+        SETButton.setBorder(null);
+        SETButton.setBorderPainted(false);
+        SETButton.setContentAreaFilled(false);
         SETButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SETButtonActionPerformed(evt);
@@ -186,8 +201,9 @@ public class MainPage extends javax.swing.JFrame {
 
         POS.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jSnacks.setBackground(new java.awt.Color(255, 102, 0));
+        jSnacks.setBackground(new java.awt.Color(0, 153, 102));
         jSnacks.setFont(new java.awt.Font("Segoe UI Symbol", 1, 14)); // NOI18N
+        jSnacks.setForeground(new java.awt.Color(255, 255, 255));
         jSnacks.setText("Snacks");
         jSnacks.setMaximumSize(new java.awt.Dimension(112, 36));
         jSnacks.setMinimumSize(new java.awt.Dimension(112, 36));
@@ -236,14 +252,14 @@ public class MainPage extends javax.swing.JFrame {
         SnacksPage.setBackground(new java.awt.Color(153, 153, 153));
 
         jButton9.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton9.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 2 (1) (1) (1) (1).png")); // NOI18N
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/nova.png"))); // NOI18N
         jButton9.setText("NOVA");
         jButton9.setBorder(null);
         jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton9.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton10.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 3 (1).png")); // NOI18N
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/vcut.png"))); // NOI18N
         jButton10.setText("V-CUT");
         jButton10.setBorder(null);
         jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -253,14 +269,14 @@ public class MainPage extends javax.swing.JFrame {
         jButton10.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton2.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 1 (1).png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/piattos.png"))); // NOI18N
         jButton2.setText("PIATTOS");
         jButton2.setBorder(null);
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton3.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 4 (1).png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/pillows.png"))); // NOI18N
         jButton3.setText("PILLOWS");
         jButton3.setBorder(null);
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -275,7 +291,7 @@ public class MainPage extends javax.swing.JFrame {
         });
 
         jButton4.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 5 (1).png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/lays.png"))); // NOI18N
         jButton4.setText("LAYS");
         jButton4.setBorder(null);
         jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -285,7 +301,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton5.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 6 (1).png")); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cheetos.png"))); // NOI18N
         jButton5.setText("CHEETOS");
         jButton5.setBorder(null);
         jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -295,7 +311,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton6.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 8 (1).png")); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sweetcorn.png"))); // NOI18N
         jButton6.setText("SWEET CORN");
         jButton6.setBorder(null);
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -304,7 +320,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton7.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 7 (1) (1).png")); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/tomi.png"))); // NOI18N
         jButton7.setText("TOMI");
         jButton7.setBorder(null);
         jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -314,7 +330,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton8.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 7 (2) (1).png")); // NOI18N
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/nagaraya.png"))); // NOI18N
         jButton8.setText("NAGARAYA");
         jButton8.setBorder(null);
         jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -324,7 +340,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton8.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton11.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton11.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\dingdong.png")); // NOI18N
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/dingdong.png"))); // NOI18N
         jButton11.setText("DING DONG");
         jButton11.setBorder(null);
         jButton11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -334,7 +350,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton11.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton12.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton12.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\boybawang.png")); // NOI18N
+        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/boybawang.png"))); // NOI18N
         jButton12.setText("BOY BAWANG");
         jButton12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton12.setMaximumSize(new java.awt.Dimension(180, 186));
@@ -343,7 +359,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton12.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton13.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton13.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 7 (3) (1).png")); // NOI18N
+        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cracklings.png"))); // NOI18N
         jButton13.setText("CRACKLINGS");
         jButton13.setBorder(null);
         jButton13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -413,45 +429,85 @@ public class MainPage extends javax.swing.JFrame {
 
         DrinksPage.setBackground(new java.awt.Color(153, 153, 153));
 
-        jButton14.setText("jButton14");
+        jButton14.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/monster.png"))); // NOI18N
+        jButton14.setText("MONSTER");
+        jButton14.setBorder(null);
+        jButton14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton14.setMaximumSize(new java.awt.Dimension(180, 186));
         jButton14.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton14.setPreferredSize(new java.awt.Dimension(180, 186));
+        jButton14.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        jButton15.setText("jButton14");
+        jButton15.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/bang.png"))); // NOI18N
+        jButton15.setText("BANG");
+        jButton15.setBorder(null);
+        jButton15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton15.setMaximumSize(new java.awt.Dimension(180, 186));
         jButton15.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton15.setPreferredSize(new java.awt.Dimension(180, 186));
+        jButton15.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        jButton16.setText("jButton14");
+        jButton16.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/pocarisweat.png"))); // NOI18N
+        jButton16.setText("POCARI SWEAT");
+        jButton16.setBorder(null);
+        jButton16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton16.setMaximumSize(new java.awt.Dimension(180, 186));
         jButton16.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton16.setPreferredSize(new java.awt.Dimension(180, 186));
+        jButton16.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        jButton17.setText("jButton14");
+        jButton17.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/royal.png"))); // NOI18N
+        jButton17.setText("ROYAL");
+        jButton17.setBorder(null);
+        jButton17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton17.setMaximumSize(new java.awt.Dimension(180, 186));
         jButton17.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton17.setPreferredSize(new java.awt.Dimension(180, 186));
+        jButton17.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        jButton18.setText("jButton14");
+        jButton18.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sprite.png"))); // NOI18N
+        jButton18.setText("SPRITE");
+        jButton18.setBorder(null);
+        jButton18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton18.setMaximumSize(new java.awt.Dimension(180, 186));
         jButton18.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton18.setPreferredSize(new java.awt.Dimension(180, 186));
+        jButton18.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        jButton19.setText("jButton14");
+        jButton19.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/tropicana.png"))); // NOI18N
+        jButton19.setText("TROPICANA");
+        jButton19.setBorder(null);
+        jButton19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton19.setMaximumSize(new java.awt.Dimension(180, 186));
         jButton19.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton19.setPreferredSize(new java.awt.Dimension(180, 186));
+        jButton19.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        jButton20.setText("jButton14");
+        jButton20.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/smartc.png"))); // NOI18N
+        jButton20.setText("SMART - C");
+        jButton20.setBorder(null);
+        jButton20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton20.setMaximumSize(new java.awt.Dimension(180, 186));
         jButton20.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton20.setPreferredSize(new java.awt.Dimension(180, 186));
+        jButton20.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        jButton21.setText("jButton14");
+        jButton21.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/minutemaid.png"))); // NOI18N
+        jButton21.setText("MINUTE MAID");
+        jButton21.setBorder(null);
+        jButton21.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton21.setMaximumSize(new java.awt.Dimension(180, 186));
         jButton21.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton21.setPreferredSize(new java.awt.Dimension(180, 186));
+        jButton21.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         javax.swing.GroupLayout DrinksPageLayout = new javax.swing.GroupLayout(DrinksPage);
         DrinksPage.setLayout(DrinksPageLayout);
@@ -459,18 +515,18 @@ public class MainPage extends javax.swing.JFrame {
             DrinksPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DrinksPageLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
+                .addGroup(DrinksPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(DrinksPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(DrinksPageLayout.createSequentialGroup()
-                        .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(DrinksPageLayout.createSequentialGroup()
-                        .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -482,17 +538,17 @@ public class MainPage extends javax.swing.JFrame {
             DrinksPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DrinksPageLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(DrinksPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(DrinksPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(DrinksPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(DrinksPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(93, Short.MAX_VALUE))
         );
 
@@ -506,7 +562,7 @@ public class MainPage extends javax.swing.JFrame {
         HouseUtensilsPage.setBackground(new java.awt.Color(153, 153, 153));
 
         jButton22.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton22.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\airpurifier.png")); // NOI18N
+        jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/airpurifier.png"))); // NOI18N
         jButton22.setText("AIR PURIFIER");
         jButton22.setBorder(null);
         jButton22.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -516,7 +572,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton22.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton23.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton23.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\mop.png")); // NOI18N
+        jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mop.png"))); // NOI18N
         jButton23.setText("MOP");
         jButton23.setBorder(null);
         jButton23.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -526,7 +582,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton23.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton24.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton24.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\casserole.png")); // NOI18N
+        jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casserole.png"))); // NOI18N
         jButton24.setText("CASSEROLE");
         jButton24.setBorder(null);
         jButton24.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -536,7 +592,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton24.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton25.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton25.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\potbundle.png")); // NOI18N
+        jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/potbundle.png"))); // NOI18N
         jButton25.setText("POT BUNDLE");
         jButton25.setBorder(null);
         jButton25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -546,7 +602,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton25.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton26.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton26.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\dishwashingliquid.png")); // NOI18N
+        jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/dishwashingliquid.png"))); // NOI18N
         jButton26.setText("DISHWASHING LIQUID");
         jButton26.setBorder(null);
         jButton26.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -556,7 +612,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton26.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton27.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton27.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\cuttingboard.png")); // NOI18N
+        jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cuttingboard.png"))); // NOI18N
         jButton27.setText("CUTTING BOARD");
         jButton27.setBorder(null);
         jButton27.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -566,14 +622,64 @@ public class MainPage extends javax.swing.JFrame {
         jButton27.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton28.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton28.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\carpet.png")); // NOI18N
-        jButton28.setText("CARPET");
+        jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/scrub.png"))); // NOI18N
+        jButton28.setText("SCRUB");
         jButton28.setBorder(null);
         jButton28.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton28.setMaximumSize(new java.awt.Dimension(180, 186));
         jButton28.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton28.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton28.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+
+        jButton29.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jButton29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/carpet.png"))); // NOI18N
+        jButton29.setText("CARPET");
+        jButton29.setBorder(null);
+        jButton29.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton29.setMaximumSize(new java.awt.Dimension(180, 186));
+        jButton29.setMinimumSize(new java.awt.Dimension(180, 186));
+        jButton29.setPreferredSize(new java.awt.Dimension(180, 186));
+        jButton29.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+
+        jButton30.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jButton30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/containers.png"))); // NOI18N
+        jButton30.setText("CONTAINERS");
+        jButton30.setBorder(null);
+        jButton30.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton30.setMaximumSize(new java.awt.Dimension(180, 186));
+        jButton30.setMinimumSize(new java.awt.Dimension(180, 186));
+        jButton30.setPreferredSize(new java.awt.Dimension(180, 186));
+        jButton30.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+
+        jButton31.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jButton31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/tissue.png"))); // NOI18N
+        jButton31.setText("TISSUE");
+        jButton31.setBorder(null);
+        jButton31.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton31.setMaximumSize(new java.awt.Dimension(180, 186));
+        jButton31.setMinimumSize(new java.awt.Dimension(180, 186));
+        jButton31.setPreferredSize(new java.awt.Dimension(180, 186));
+        jButton31.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+
+        jButton32.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jButton32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/hanger.png"))); // NOI18N
+        jButton32.setText("HANGER");
+        jButton32.setBorder(null);
+        jButton32.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton32.setMaximumSize(new java.awt.Dimension(180, 186));
+        jButton32.setMinimumSize(new java.awt.Dimension(180, 186));
+        jButton32.setPreferredSize(new java.awt.Dimension(180, 186));
+        jButton32.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+
+        jButton33.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        jButton33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/knives.png"))); // NOI18N
+        jButton33.setText("KNIVES");
+        jButton33.setBorder(null);
+        jButton33.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton33.setMaximumSize(new java.awt.Dimension(180, 186));
+        jButton33.setMinimumSize(new java.awt.Dimension(180, 186));
+        jButton33.setPreferredSize(new java.awt.Dimension(180, 186));
+        jButton33.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         javax.swing.GroupLayout HouseUtensilsPageLayout = new javax.swing.GroupLayout(HouseUtensilsPage);
         HouseUtensilsPage.setLayout(HouseUtensilsPageLayout);
@@ -582,6 +688,14 @@ public class MainPage extends javax.swing.JFrame {
             .addGroup(HouseUtensilsPageLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addGroup(HouseUtensilsPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(HouseUtensilsPageLayout.createSequentialGroup()
+                        .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(HouseUtensilsPageLayout.createSequentialGroup()
                         .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -595,7 +709,9 @@ public class MainPage extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(90, Short.MAX_VALUE))
         );
         HouseUtensilsPageLayout.setVerticalGroup(
@@ -603,18 +719,23 @@ public class MainPage extends javax.swing.JFrame {
             .addGroup(HouseUtensilsPageLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addGroup(HouseUtensilsPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(HouseUtensilsPageLayout.createSequentialGroup()
-                        .addGroup(HouseUtensilsPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(HouseUtensilsPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(763, Short.MAX_VALUE))
+                    .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(HouseUtensilsPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(HouseUtensilsPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(93, Short.MAX_VALUE))
         );
 
         HouseUtensilsScroll.setViewportView(HouseUtensilsPage);
@@ -627,7 +748,7 @@ public class MainPage extends javax.swing.JFrame {
         BabyNeedsPage.setBackground(new java.awt.Color(153, 153, 153));
 
         jButton34.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton34.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\babysocks.png")); // NOI18N
+        jButton34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babysocks.png"))); // NOI18N
         jButton34.setText("BABY SOCKS");
         jButton34.setBorder(null);
         jButton34.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -637,7 +758,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton34.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton35.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton35.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\babyshoes.png")); // NOI18N
+        jButton35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babyshoes.png"))); // NOI18N
         jButton35.setText("BABY SHOES");
         jButton35.setBorder(null);
         jButton35.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -647,7 +768,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton35.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton46.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton46.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\babystroller.png")); // NOI18N
+        jButton46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babystroller.png"))); // NOI18N
         jButton46.setText("BABY STROLLER");
         jButton46.setBorder(null);
         jButton46.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -657,7 +778,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton46.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton47.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton47.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\babycrib.png")); // NOI18N
+        jButton47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babycrib.png"))); // NOI18N
         jButton47.setText("BABY CRIB");
         jButton47.setBorder(null);
         jButton47.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -667,7 +788,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton47.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton48.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton48.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\babysoap.png")); // NOI18N
+        jButton48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babysoap.png"))); // NOI18N
         jButton48.setText("BABY SOAP");
         jButton48.setAutoscrolls(true);
         jButton48.setBorder(null);
@@ -678,7 +799,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton48.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton49.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton49.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\babyclothes.png")); // NOI18N
+        jButton49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babyclothes.png"))); // NOI18N
         jButton49.setText("BABY CLOTHES");
         jButton49.setAutoscrolls(true);
         jButton49.setBorder(null);
@@ -689,7 +810,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton49.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton50.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton50.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\babybottles.png")); // NOI18N
+        jButton50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babybottles.png"))); // NOI18N
         jButton50.setText("BABY BOTTLE");
         jButton50.setAutoscrolls(true);
         jButton50.setBorder(null);
@@ -700,7 +821,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton50.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton51.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton51.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\babyteether.png")); // NOI18N
+        jButton51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babyteether.png"))); // NOI18N
         jButton51.setText("BABY TEETHER");
         jButton51.setAutoscrolls(true);
         jButton51.setBorder(null);
@@ -711,7 +832,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton51.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton52.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton52.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\babydiapers.png")); // NOI18N
+        jButton52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babydiapers.png"))); // NOI18N
         jButton52.setText("BABY DIAPERS");
         jButton52.setAutoscrolls(true);
         jButton52.setBorder(null);
@@ -722,7 +843,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton52.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton53.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton53.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\babyspoon.png")); // NOI18N
+        jButton53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babyspoon.png"))); // NOI18N
         jButton53.setText("BABY SPOON");
         jButton53.setAutoscrolls(true);
         jButton53.setBorder(null);
@@ -733,7 +854,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton53.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton55.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton55.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\babymilk.png")); // NOI18N
+        jButton55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babymilk.png"))); // NOI18N
         jButton55.setText("BABY MILK");
         jButton55.setAutoscrolls(true);
         jButton55.setBorder(null);
@@ -744,7 +865,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton55.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton56.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton56.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\babytoy.png")); // NOI18N
+        jButton56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babytoy.png"))); // NOI18N
         jButton56.setText("BABY TOY");
         jButton56.setAutoscrolls(true);
         jButton56.setBorder(null);
@@ -927,17 +1048,11 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(BackgroundLayout.createSequentialGroup()
                 .addGroup(BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(BackgroundLayout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(SETButton))
-                    .addGroup(BackgroundLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(ADMButton))
-                    .addGroup(BackgroundLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(IMSButton))
-                    .addComponent(POSButton))
-                .addGap(31, 31, 31)
+                    .addComponent(IMSButton, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(SETButton, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(POSButton, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(ADMButton, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(0, 0, 0)
                 .addComponent(MenuPanels, javax.swing.GroupLayout.PREFERRED_SIZE, 1215, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -945,20 +1060,19 @@ public class MainPage extends javax.swing.JFrame {
             BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BackgroundLayout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addGroup(BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BackgroundLayout.createSequentialGroup()
-                        .addComponent(POSButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(IMSButton)
-                        .addGap(74, 74, 74)
-                        .addComponent(ADMButton)
-                        .addGap(36, 36, 36)
-                        .addComponent(SETButton)
-                        .addGap(118, 118, 118))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BackgroundLayout.createSequentialGroup()
-                        .addComponent(MenuPanels, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15))))
+                        .addComponent(POSButton, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(IMSButton, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ADMButton, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SETButton, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(98, 98, 98))
+                    .addComponent(MenuPanels, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -983,8 +1097,14 @@ public class MainPage extends javax.swing.JFrame {
         ADM.setVisible(false);
         SET.setVisible(false);
         
-        POSButton.setBackground(Color.green);
-        POSButton.setForeground(Color.WHITE);
+        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\psde1.png");
+        POSButton.setIcon(icon);
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imsd.png");
+        IMSButton.setIcon(icon1);
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\admd.png");
+        ADMButton.setIcon(icon2);
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\setd.png");
+        SETButton.setIcon(icon3);
         
     }//GEN-LAST:event_POSButtonActionPerformed
 
@@ -1058,6 +1178,15 @@ public class MainPage extends javax.swing.JFrame {
         IMS.setVisible(true);
         ADM.setVisible(false);
         SET.setVisible(false);
+        
+        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\posd.png");
+        POSButton.setIcon(icon);
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imse.png");
+        IMSButton.setIcon(icon1);
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\admd.png");
+        ADMButton.setIcon(icon2);
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\setd.png");
+        SETButton.setIcon(icon3);
     }//GEN-LAST:event_IMSButtonActionPerformed
 
     private void ADMButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ADMButtonActionPerformed
@@ -1065,6 +1194,15 @@ public class MainPage extends javax.swing.JFrame {
         IMS.setVisible(false);
         ADM.setVisible(true);
         SET.setVisible(false);
+        
+        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\posd.png");
+        POSButton.setIcon(icon);
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imsd.png");
+        IMSButton.setIcon(icon1);
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\amde.png");
+        ADMButton.setIcon(icon2);
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\setd.png");
+        SETButton.setIcon(icon3);
     }//GEN-LAST:event_ADMButtonActionPerformed
 
     private void SETButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SETButtonActionPerformed
@@ -1072,6 +1210,15 @@ public class MainPage extends javax.swing.JFrame {
         IMS.setVisible(false);
         ADM.setVisible(false);
         SET.setVisible(true);
+        
+        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\posd.png");
+        POSButton.setIcon(icon);
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imsd.png");
+        IMSButton.setIcon(icon1);
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\admd.png");
+        ADMButton.setIcon(icon2);
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\sete.png");
+        SETButton.setIcon(icon3);
     }//GEN-LAST:event_SETButtonActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -1155,7 +1302,12 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
+    private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton30;
+    private javax.swing.JButton jButton31;
+    private javax.swing.JButton jButton32;
+    private javax.swing.JButton jButton33;
     private javax.swing.JButton jButton34;
     private javax.swing.JButton jButton35;
     private javax.swing.JButton jButton4;
