@@ -242,14 +242,14 @@ public class MainPage extends javax.swing.JFrame {
         SnacksPage.setBackground(new java.awt.Color(153, 153, 153));
 
         jButton9.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton9.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 2 (1) (1) (1) (1).png")); // NOI18N
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/nova.png"))); // NOI18N
         jButton9.setText("NOVA");
         jButton9.setBorder(null);
         jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton9.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton10.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 3 (1).png")); // NOI18N
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/vcut.png"))); // NOI18N
         jButton10.setText("V-CUT");
         jButton10.setBorder(null);
         jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -259,14 +259,14 @@ public class MainPage extends javax.swing.JFrame {
         jButton10.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton2.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 1 (1).png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/piattos.png"))); // NOI18N
         jButton2.setText("PIATTOS");
         jButton2.setBorder(null);
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton3.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 4 (1).png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/pillows.png"))); // NOI18N
         jButton3.setText("PILLOWS");
         jButton3.setBorder(null);
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -281,7 +281,7 @@ public class MainPage extends javax.swing.JFrame {
         });
 
         jButton4.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 5 (1).png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/lays.png"))); // NOI18N
         jButton4.setText("LAYS");
         jButton4.setBorder(null);
         jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -291,7 +291,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton5.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 6 (1).png")); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cheetos.png"))); // NOI18N
         jButton5.setText("CHEETOS");
         jButton5.setBorder(null);
         jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -301,7 +301,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton6.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 8 (1).png")); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sweetcorn.png"))); // NOI18N
         jButton6.setText("SWEET CORN");
         jButton6.setBorder(null);
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -310,7 +310,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton7.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 7 (1) (1).png")); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/tomi.png"))); // NOI18N
         jButton7.setText("TOMI");
         jButton7.setBorder(null);
         jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -320,7 +320,6 @@ public class MainPage extends javax.swing.JFrame {
         jButton7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton8.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jButton8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\image 7 (2) (1).png")); // NOI18N
         jButton8.setText("NAGARAYA");
         jButton8.setBorder(null);
         jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
