@@ -127,7 +127,7 @@ public class MainPage extends javax.swing.JFrame {
         jButton54 = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jButton57 = new javax.swing.JButton();
         jButton58 = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
@@ -190,7 +190,7 @@ public class MainPage extends javax.swing.JFrame {
         );
 
         POSButton.setBackground(new java.awt.Color(204, 204, 204));
-        POSButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\psde1.png")); // NOI18N
+        POSButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/psde1.png"))); // NOI18N
         POSButton.setBorder(null);
         POSButton.setBorderPainted(false);
         POSButton.setContentAreaFilled(false);
@@ -201,7 +201,7 @@ public class MainPage extends javax.swing.JFrame {
             }
         });
 
-        IMSButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imsd.png")); // NOI18N
+        IMSButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/imsd.png"))); // NOI18N
         IMSButton.setBorder(null);
         IMSButton.setBorderPainted(false);
         IMSButton.setContentAreaFilled(false);
@@ -211,7 +211,7 @@ public class MainPage extends javax.swing.JFrame {
             }
         });
 
-        ADMButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\admd.png")); // NOI18N
+        ADMButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/admd.png"))); // NOI18N
         ADMButton.setBorder(null);
         ADMButton.setBorderPainted(false);
         ADMButton.setContentAreaFilled(false);
@@ -221,7 +221,7 @@ public class MainPage extends javax.swing.JFrame {
             }
         });
 
-        SETButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\setd.png")); // NOI18N
+        SETButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/setd.png"))); // NOI18N
         SETButton.setBorder(null);
         SETButton.setBorderPainted(false);
         SETButton.setContentAreaFilled(false);
@@ -976,7 +976,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 0));
 
-        jButton36.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\discount.png")); // NOI18N
+        jButton36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/discount.png"))); // NOI18N
         jButton36.setBorder(null);
         jButton36.setBorderPainted(false);
         jButton36.setContentAreaFilled(false);
@@ -986,7 +986,7 @@ public class MainPage extends javax.swing.JFrame {
             }
         });
 
-        jButton37.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\up.png")); // NOI18N
+        jButton37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/up.png"))); // NOI18N
         jButton37.setBorder(null);
         jButton37.setBorderPainted(false);
         jButton37.setContentAreaFilled(false);
@@ -1004,7 +1004,7 @@ public class MainPage extends javax.swing.JFrame {
             .addGap(0, 38, Short.MAX_VALUE)
         );
 
-        jButton38.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\down.png")); // NOI18N
+        jButton38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/down.png"))); // NOI18N
         jButton38.setBorder(null);
         jButton38.setBorderPainted(false);
         jButton38.setContentAreaFilled(false);
@@ -1137,7 +1137,7 @@ public class MainPage extends javax.swing.JFrame {
         Cash.setBackground(new java.awt.Color(204, 204, 204));
         Cash.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jButton42.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\cashbutton (1) (1).png")); // NOI18N
+        jButton42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cashbutton (1) (1).png"))); // NOI18N
         jButton42.setBorder(null);
         jButton42.setBorderPainted(false);
         jButton42.setContentAreaFilled(false);
@@ -1185,29 +1185,31 @@ public class MainPage extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Segoe UI Historic", 0, 14)); // NOI18N
         jLabel6.setText("Total Amount Tendered");
 
-        jButton43.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\100cash.png")); // NOI18N
+        jButton43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/100cash.png"))); // NOI18N
         jButton43.setBorder(null);
         jButton43.setBorderPainted(false);
         jButton43.setContentAreaFilled(false);
 
-        jButton44.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\200cash.png")); // NOI18N
+        jButton44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/200cash.png"))); // NOI18N
         jButton44.setBorder(null);
         jButton44.setBorderPainted(false);
         jButton44.setContentAreaFilled(false);
 
-        jButton45.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\500cash.png")); // NOI18N
+        jButton45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/500cash.png"))); // NOI18N
         jButton45.setBorder(null);
         jButton45.setBorderPainted(false);
         jButton45.setContentAreaFilled(false);
 
-        jButton54.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\1000cash.png")); // NOI18N
+        jButton54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/1000cash.png"))); // NOI18N
         jButton54.setBorder(null);
         jButton54.setBorderPainted(false);
         jButton54.setContentAreaFilled(false);
 
         jPanel9.setBackground(new java.awt.Color(0, 0, 0));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\₱ (1).png")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/₱ (1).png"))); // NOI18N
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/keyboard (1).png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -1217,17 +1219,17 @@ public class MainPage extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel8)
-                .addContainerGap())
+                .addComponent(jLabel10)
+                .addGap(19, 19, 19))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel7))
+                .addContainerGap())
         );
 
         jButton57.setBackground(new java.awt.Color(0, 153, 102));
@@ -1235,10 +1237,15 @@ public class MainPage extends javax.swing.JFrame {
         jButton57.setForeground(new java.awt.Color(255, 255, 255));
         jButton57.setText("Confirm Amount");
 
-        jButton58.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\Type=Line.png")); // NOI18N
+        jButton58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Type=Line.png"))); // NOI18N
         jButton58.setBorder(null);
         jButton58.setBorderPainted(false);
         jButton58.setContentAreaFilled(false);
+        jButton58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton58ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout PaymentLayout = new javax.swing.GroupLayout(Payment);
         Payment.setLayout(PaymentLayout);
@@ -1359,7 +1366,7 @@ public class MainPage extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Segoe UI Historic", 1, 24)); // NOI18N
         jLabel9.setText("Discounts:");
 
-        jButton59.setIcon(new javax.swing.ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\Type=Line.png")); // NOI18N
+        jButton59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Type=Line.png"))); // NOI18N
         jButton59.setBorder(null);
         jButton59.setBorderPainted(false);
         jButton59.setContentAreaFilled(false);
@@ -1551,13 +1558,13 @@ public class MainPage extends javax.swing.JFrame {
         ADM.setVisible(false);
         SET.setVisible(false);
         
-        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\psde1.png");
+        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\psde1.png");
         POSButton.setIcon(icon);
-        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imsd.png");
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\imsd.png");
         IMSButton.setIcon(icon1);
-        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\admd.png");
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\admd.png");
         ADMButton.setIcon(icon2);
-        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\setd.png");
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\setd.png");
         SETButton.setIcon(icon3);
         
     }//GEN-LAST:event_POSButtonActionPerformed
@@ -1633,13 +1640,13 @@ public class MainPage extends javax.swing.JFrame {
         ADM.setVisible(false);
         SET.setVisible(false);
         
-        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\posd.png");
+        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\posd.png");
         POSButton.setIcon(icon);
-        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imse.png");
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\imse.png");
         IMSButton.setIcon(icon1);
-        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\admd.png");
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\admd.png");
         ADMButton.setIcon(icon2);
-        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\setd.png");
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\setd.png");
         SETButton.setIcon(icon3);
     }//GEN-LAST:event_IMSButtonActionPerformed
 
@@ -1649,13 +1656,13 @@ public class MainPage extends javax.swing.JFrame {
         ADM.setVisible(true);
         SET.setVisible(false);
         
-        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\posd.png");
+        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\posd.png");
         POSButton.setIcon(icon);
-        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imsd.png");
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\imsd.png");
         IMSButton.setIcon(icon1);
-        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\amde.png");
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\amde.png");
         ADMButton.setIcon(icon2);
-        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\setd.png");
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\setd.png");
         SETButton.setIcon(icon3);
     }//GEN-LAST:event_ADMButtonActionPerformed
 
@@ -1665,13 +1672,13 @@ public class MainPage extends javax.swing.JFrame {
         ADM.setVisible(false);
         SET.setVisible(true);
         
-        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\posd.png");
+        ImageIcon icon = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\posd.png");
         POSButton.setIcon(icon);
-        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\imsd.png");
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\imsd.png");
         IMSButton.setIcon(icon1);
-        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\admd.png");
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\admd.png");
         ADMButton.setIcon(icon2);
-        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Downloads\\sete.png");
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Charles Andrei\\Documents\\NetBeansProjects\\GroceryPOS\\src\\icons\\sete.png");
         SETButton.setIcon(icon3);
     }//GEN-LAST:event_SETButtonActionPerformed
 
@@ -1707,6 +1714,11 @@ public class MainPage extends javax.swing.JFrame {
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
         DiscountPage.setVisible(false);
     }//GEN-LAST:event_jButton59ActionPerformed
+
+    private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
+        Cash.setVisible(true);
+        Payment.setVisible(false);
+    }//GEN-LAST:event_jButton58ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1833,13 +1845,13 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JButton jDrink;
     private javax.swing.JButton jHouseUtensils;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;

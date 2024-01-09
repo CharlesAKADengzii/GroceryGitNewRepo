@@ -173,7 +173,7 @@
               <Color blue="cc" green="cc" red="cc" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\psde1.png"/>
+              <Image iconType="3" name="/icons/psde1.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -189,7 +189,7 @@
         <Component class="javax.swing.JButton" name="IMSButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\imsd.png"/>
+              <Image iconType="3" name="/icons/imsd.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -204,7 +204,7 @@
         <Component class="javax.swing.JButton" name="ADMButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\admd.png"/>
+              <Image iconType="3" name="/icons/admd.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -219,7 +219,7 @@
         <Component class="javax.swing.JButton" name="SETButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\setd.png"/>
+              <Image iconType="3" name="/icons/setd.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -1908,7 +1908,7 @@
                             <Component class="javax.swing.JButton" name="jButton36">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\discount.png"/>
+                                  <Image iconType="3" name="/icons/discount.png"/>
                                 </Property>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                   <Border info="null"/>
@@ -1923,7 +1923,7 @@
                             <Component class="javax.swing.JButton" name="jButton37">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\up.png"/>
+                                  <Image iconType="3" name="/icons/up.png"/>
                                 </Property>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                   <Border info="null"/>
@@ -1955,7 +1955,7 @@
                             <Component class="javax.swing.JButton" name="jButton38">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\down.png"/>
+                                  <Image iconType="3" name="/icons/down.png"/>
                                 </Property>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                   <Border info="null"/>
@@ -2178,7 +2178,7 @@
                                 <Component class="javax.swing.JButton" name="jButton42">
                                   <Properties>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\cashbutton (1) (1).png"/>
+                                      <Image iconType="3" name="/icons/cashbutton (1) (1).png"/>
                                     </Property>
                                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                       <Border info="null"/>
@@ -2304,7 +2304,7 @@
                                 <Component class="javax.swing.JButton" name="jButton43">
                                   <Properties>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\100cash.png"/>
+                                      <Image iconType="3" name="/icons/100cash.png"/>
                                     </Property>
                                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                       <Border info="null"/>
@@ -2316,7 +2316,7 @@
                                 <Component class="javax.swing.JButton" name="jButton44">
                                   <Properties>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\200cash.png"/>
+                                      <Image iconType="3" name="/icons/200cash.png"/>
                                     </Property>
                                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                       <Border info="null"/>
@@ -2328,7 +2328,7 @@
                                 <Component class="javax.swing.JButton" name="jButton45">
                                   <Properties>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\500cash.png"/>
+                                      <Image iconType="3" name="/icons/500cash.png"/>
                                     </Property>
                                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                       <Border info="null"/>
@@ -2340,7 +2340,7 @@
                                 <Component class="javax.swing.JButton" name="jButton54">
                                   <Properties>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\1000cash.png"/>
+                                      <Image iconType="3" name="/icons/1000cash.png"/>
                                     </Property>
                                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                       <Border info="null"/>
@@ -2363,20 +2363,20 @@
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                     </DimensionLayout>
                                     <DimensionLayout dim="1">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Component id="jLabel8" max="32767" attributes="0"/>
-                                                  <Component id="jLabel7" max="32767" attributes="0"/>
-                                              </Group>
+                                          <Group type="102" alignment="1" attributes="0">
                                               <EmptySpace max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                     </DimensionLayout>
@@ -2385,11 +2385,16 @@
                                     <Component class="javax.swing.JLabel" name="jLabel7">
                                       <Properties>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\&#x20b1; (1).png"/>
+                                          <Image iconType="3" name="/icons/&#x20b1; (1).png"/>
                                         </Property>
                                       </Properties>
                                     </Component>
-                                    <Component class="javax.swing.JLabel" name="jLabel8">
+                                    <Component class="javax.swing.JLabel" name="jLabel10">
+                                      <Properties>
+                                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                          <Image iconType="3" name="/icons/keyboard (1).png"/>
+                                        </Property>
+                                      </Properties>
                                     </Component>
                                   </SubComponents>
                                 </Container>
@@ -2410,7 +2415,7 @@
                                 <Component class="javax.swing.JButton" name="jButton58">
                                   <Properties>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\Type=Line.png"/>
+                                      <Image iconType="3" name="/icons/Type=Line.png"/>
                                     </Property>
                                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                       <Border info="null"/>
@@ -2418,6 +2423,9 @@
                                     <Property name="borderPainted" type="boolean" value="false"/>
                                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton58ActionPerformed"/>
+                                  </Events>
                                 </Component>
                               </SubComponents>
                             </Container>
@@ -2544,7 +2552,7 @@
                             <Component class="javax.swing.JButton" name="jButton59">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="2" name="C:\Users\Charles Andrei\Downloads\Type=Line.png"/>
+                                  <Image iconType="3" name="/icons/Type=Line.png"/>
                                 </Property>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                   <Border info="null"/>
