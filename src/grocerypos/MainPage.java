@@ -5,13 +5,31 @@
 package grocerypos;
 
 import java.awt.Color;
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 /**
  *
  * @author Charles Andrei
  */
 public class MainPage extends javax.swing.JFrame {
+
+    private JButton button;
+    private int desiredWidth;
+    private int desiredHeight;
 
     /**
      * Creates new form MainPage
@@ -109,7 +127,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton38 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel5 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jPanel6 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
         jButton39 = new javax.swing.JButton();
         PaymentMethod = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
@@ -128,9 +150,12 @@ public class MainPage extends javax.swing.JFrame {
         jPanel9 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         jButton57 = new javax.swing.JButton();
         jButton58 = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea4 = new javax.swing.JTextArea();
         jButton41 = new javax.swing.JButton();
         DiscountPage = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
@@ -292,6 +317,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton9.setBorder(null);
         jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton9.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         jButton10.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/vcut.png"))); // NOI18N
@@ -302,6 +332,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton10.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton10.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton10.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/piattos.png"))); // NOI18N
@@ -309,6 +344,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton2.setBorder(null);
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/pillows.png"))); // NOI18N
@@ -334,6 +374,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton4.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton4.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cheetos.png"))); // NOI18N
@@ -344,6 +389,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton5.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton5.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sweetcorn.png"))); // NOI18N
@@ -353,6 +403,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton6.setMaximumSize(new java.awt.Dimension(180, 186));
         jButton6.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/tomi.png"))); // NOI18N
@@ -363,6 +418,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton7.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton7.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton8.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/nagaraya.png"))); // NOI18N
@@ -373,6 +433,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton8.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton8.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton8.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         jButton11.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/dingdong.png"))); // NOI18N
@@ -383,6 +448,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton11.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton11.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton11.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
 
         jButton12.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/boybawang.png"))); // NOI18N
@@ -392,6 +462,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton12.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton12.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton12.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
 
         jButton13.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cracklings.png"))); // NOI18N
@@ -402,6 +477,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton13.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton13.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton13.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout SnacksPageLayout = new javax.swing.GroupLayout(SnacksPage);
         SnacksPage.setLayout(SnacksPageLayout);
@@ -428,7 +508,7 @@ public class MainPage extends javax.swing.JFrame {
                     .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(90, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         SnacksPageLayout.setVerticalGroup(
             SnacksPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -452,7 +532,7 @@ public class MainPage extends javax.swing.JFrame {
                     .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(93, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         SnacksScroll.setViewportView(SnacksPage);
@@ -473,6 +553,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton14.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton14.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton14.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
 
         jButton15.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/bang.png"))); // NOI18N
@@ -483,6 +568,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton15.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton15.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton15.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
 
         jButton16.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/pocarisweat.png"))); // NOI18N
@@ -493,6 +583,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton16.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton16.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton16.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
 
         jButton17.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/royal.png"))); // NOI18N
@@ -503,6 +598,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton17.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton17.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton17.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
 
         jButton18.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sprite.png"))); // NOI18N
@@ -513,6 +613,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton18.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton18.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton18.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
 
         jButton19.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/tropicana.png"))); // NOI18N
@@ -523,6 +628,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton19.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton19.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton19.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
 
         jButton20.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/smartc.png"))); // NOI18N
@@ -533,6 +643,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton20.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton20.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton20.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
 
         jButton21.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/minutemaid.png"))); // NOI18N
@@ -543,6 +658,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton21.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton21.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton21.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout DrinksPageLayout = new javax.swing.GroupLayout(DrinksPage);
         DrinksPage.setLayout(DrinksPageLayout);
@@ -567,7 +687,7 @@ public class MainPage extends javax.swing.JFrame {
                         .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(90, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DrinksPageLayout.setVerticalGroup(
             DrinksPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -584,7 +704,7 @@ public class MainPage extends javax.swing.JFrame {
                     .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(93, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         DrinksScroll.setViewportView(DrinksPage);
@@ -605,6 +725,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton22.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton22.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton22.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton22ActionPerformed(evt);
+            }
+        });
 
         jButton23.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mop.png"))); // NOI18N
@@ -615,6 +740,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton23.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton23.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton23.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
 
         jButton24.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/casserole.png"))); // NOI18N
@@ -625,6 +755,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton24.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton24.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton24.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
 
         jButton25.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/potbundle.png"))); // NOI18N
@@ -635,6 +770,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton25.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton25.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton25.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
 
         jButton26.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/dishwashingliquid.png"))); // NOI18N
@@ -645,6 +785,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton26.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton26.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton26.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
 
         jButton27.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cuttingboard.png"))); // NOI18N
@@ -655,6 +800,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton27.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton27.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton27.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
 
         jButton28.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/scrub.png"))); // NOI18N
@@ -665,6 +815,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton28.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton28.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton28.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
 
         jButton29.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/carpet.png"))); // NOI18N
@@ -675,6 +830,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton29.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton29.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton29.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton29ActionPerformed(evt);
+            }
+        });
 
         jButton30.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/containers.png"))); // NOI18N
@@ -685,6 +845,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton30.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton30.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton30.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
 
         jButton31.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/tissue.png"))); // NOI18N
@@ -695,6 +860,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton31.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton31.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton31.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
 
         jButton32.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/hanger.png"))); // NOI18N
@@ -705,6 +875,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton32.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton32.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton32.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton32ActionPerformed(evt);
+            }
+        });
 
         jButton33.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/knives.png"))); // NOI18N
@@ -715,6 +890,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton33.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton33.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton33.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton33ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout HouseUtensilsPageLayout = new javax.swing.GroupLayout(HouseUtensilsPage);
         HouseUtensilsPage.setLayout(HouseUtensilsPageLayout);
@@ -747,7 +927,7 @@ public class MainPage extends javax.swing.JFrame {
                         .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(90, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         HouseUtensilsPageLayout.setVerticalGroup(
             HouseUtensilsPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -770,7 +950,7 @@ public class MainPage extends javax.swing.JFrame {
                     .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(93, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         HouseUtensilsScroll.setViewportView(HouseUtensilsPage);
@@ -791,6 +971,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton34.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton34.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton34.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton34ActionPerformed(evt);
+            }
+        });
 
         jButton35.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babyshoes.png"))); // NOI18N
@@ -801,6 +986,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton35.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton35.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton35.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
 
         jButton46.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babystroller.png"))); // NOI18N
@@ -811,6 +1001,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton46.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton46.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton46.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton46ActionPerformed(evt);
+            }
+        });
 
         jButton47.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babycrib.png"))); // NOI18N
@@ -821,6 +1016,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton47.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton47.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton47.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton47ActionPerformed(evt);
+            }
+        });
 
         jButton48.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babysoap.png"))); // NOI18N
@@ -832,6 +1032,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton48.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton48.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton48.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton48ActionPerformed(evt);
+            }
+        });
 
         jButton49.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babyclothes.png"))); // NOI18N
@@ -843,6 +1048,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton49.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton49.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton49.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton49ActionPerformed(evt);
+            }
+        });
 
         jButton50.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babybottles.png"))); // NOI18N
@@ -854,6 +1064,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton50.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton50.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton50.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton50ActionPerformed(evt);
+            }
+        });
 
         jButton51.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babyteether.png"))); // NOI18N
@@ -865,6 +1080,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton51.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton51.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton51.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton51ActionPerformed(evt);
+            }
+        });
 
         jButton52.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babydiapers.png"))); // NOI18N
@@ -876,6 +1096,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton52.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton52.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton52.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton52ActionPerformed(evt);
+            }
+        });
 
         jButton53.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babyspoon.png"))); // NOI18N
@@ -887,6 +1112,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton53.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton53.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton53.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton53ActionPerformed(evt);
+            }
+        });
 
         jButton55.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babymilk.png"))); // NOI18N
@@ -898,6 +1128,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton55.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton55.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton55.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton55ActionPerformed(evt);
+            }
+        });
 
         jButton56.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jButton56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/babytoy.png"))); // NOI18N
@@ -909,6 +1144,11 @@ public class MainPage extends javax.swing.JFrame {
         jButton56.setMinimumSize(new java.awt.Dimension(180, 186));
         jButton56.setPreferredSize(new java.awt.Dimension(180, 186));
         jButton56.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton56ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout BabyNeedsPageLayout = new javax.swing.GroupLayout(BabyNeedsPage);
         BabyNeedsPage.setLayout(BabyNeedsPageLayout);
@@ -940,7 +1180,7 @@ public class MainPage extends javax.swing.JFrame {
                         .addComponent(jButton55, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton56, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(90, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         BabyNeedsPageLayout.setVerticalGroup(
             BabyNeedsPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -963,7 +1203,7 @@ public class MainPage extends javax.swing.JFrame {
                     .addComponent(jButton53, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton52, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton56, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(93, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         BabyNeedsScroll.setViewportView(BabyNeedsPage);
@@ -1016,7 +1256,7 @@ public class MainPage extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton36)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
                 .addComponent(jButton38)
                 .addGap(0, 0, 0)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1037,31 +1277,66 @@ public class MainPage extends javax.swing.JFrame {
         );
 
         jPanel5.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel5.setPreferredSize(new java.awt.Dimension(600, 336));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(3);
+        jTextArea1.setTabSize(7);
+        jTextArea1.setWrapStyleWord(true);
+        jTextArea1.setMargin(getInsets());
+        jScrollPane2.setViewportView(jTextArea1);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(254, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 336, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 531, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jScrollPane1.setViewportView(jPanel5);
 
         jPanel6.setBackground(new java.awt.Color(255, 204, 153));
 
+        jTextArea2.setBackground(new java.awt.Color(255, 204, 153));
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jTextArea2.setLineWrap(true);
+        jTextArea2.setRows(5);
+        jTextArea2.setWrapStyleWord(true);
+        jTextArea2.setAlignmentX(1.0F);
+        jTextArea2.setAlignmentY(1.0F);
+        jTextArea2.setBorder(null);
+        jTextArea2.setCaretColor(new java.awt.Color(255, 204, 153));
+        jTextArea2.setCaretPosition(getExtendedState());
+        jTextArea2.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        jTextArea2.setSelectionColor(new java.awt.Color(255, 255, 255));
+        jScrollPane3.setViewportView(jTextArea2);
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3)
+                .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 85, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jButton39.setBackground(new java.awt.Color(0, 153, 102));
@@ -1079,7 +1354,7 @@ public class MainPage extends javax.swing.JFrame {
         ItemSummaryLayout.setHorizontalGroup(
             ItemSummaryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jScrollPane1)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(ItemSummaryLayout.createSequentialGroup()
                 .addGap(105, 105, 105)
@@ -1095,7 +1370,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton39, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                .addComponent(jButton39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -1119,16 +1394,16 @@ public class MainPage extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(42, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
                 .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton40, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
+                .addComponent(jButton40, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -1162,14 +1437,14 @@ public class MainPage extends javax.swing.JFrame {
                     .addGroup(CashLayout.createSequentialGroup()
                         .addGap(140, 140, 140)
                         .addComponent(jLabel4)))
-                .addContainerGap(102, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         CashLayout.setVerticalGroup(
             CashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CashLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton42)
                 .addGap(33, 33, 33))
         );
@@ -1189,27 +1464,57 @@ public class MainPage extends javax.swing.JFrame {
         jButton43.setBorder(null);
         jButton43.setBorderPainted(false);
         jButton43.setContentAreaFilled(false);
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton43ActionPerformed(evt);
+            }
+        });
 
         jButton44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/200cash.png"))); // NOI18N
         jButton44.setBorder(null);
         jButton44.setBorderPainted(false);
         jButton44.setContentAreaFilled(false);
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton44ActionPerformed(evt);
+            }
+        });
 
         jButton45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/500cash.png"))); // NOI18N
         jButton45.setBorder(null);
         jButton45.setBorderPainted(false);
         jButton45.setContentAreaFilled(false);
+        jButton45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton45ActionPerformed(evt);
+            }
+        });
 
         jButton54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/1000cash.png"))); // NOI18N
         jButton54.setBorder(null);
         jButton54.setBorderPainted(false);
         jButton54.setContentAreaFilled(false);
+        jButton54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton54ActionPerformed(evt);
+            }
+        });
 
         jPanel9.setBackground(new java.awt.Color(0, 0, 0));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/₱ (1).png"))); // NOI18N
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/keyboard (1).png"))); // NOI18N
+
+        jTextField1.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField1.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField1.setBorder(null);
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -1218,18 +1523,21 @@ public class MainPage extends javax.swing.JFrame {
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel10)
                 .addGap(19, 19, 19))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(18, Short.MAX_VALUE)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel10)
                     .addComponent(jLabel7))
                 .addContainerGap())
+            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         jButton57.setBackground(new java.awt.Color(0, 153, 102));
@@ -1268,15 +1576,17 @@ public class MainPage extends javax.swing.JFrame {
                     .addGroup(PaymentLayout.createSequentialGroup()
                         .addGap(52, 52, 52)
                         .addGroup(PaymentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton45, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton54, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(PaymentLayout.createSequentialGroup()
                         .addGap(105, 105, 105)
-                        .addComponent(jButton57, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 48, Short.MAX_VALUE))
+                        .addComponent(jButton57, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PaymentLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 22, Short.MAX_VALUE))
         );
         PaymentLayout.setVerticalGroup(
             PaymentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1297,7 +1607,7 @@ public class MainPage extends javax.swing.JFrame {
                 .addComponent(jButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton57, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -1306,15 +1616,23 @@ public class MainPage extends javax.swing.JFrame {
 
         jPanel8.setBackground(new java.awt.Color(255, 204, 153));
 
+        jTextArea4.setBackground(new java.awt.Color(255, 204, 153));
+        jTextArea4.setColumns(20);
+        jTextArea4.setRows(5);
+        jTextArea4.setBorder(null);
+        jScrollPane4.setViewportView(jTextArea4);
+
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addComponent(jScrollPane4)
+                .addContainerGap())
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 85, Short.MAX_VALUE)
+            .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
         );
 
         jButton41.setBackground(new java.awt.Color(255, 0, 0));
@@ -1383,7 +1701,7 @@ public class MainPage extends javax.swing.JFrame {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 235, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton59)
                 .addContainerGap())
         );
@@ -1407,7 +1725,7 @@ public class MainPage extends javax.swing.JFrame {
             DiscountPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DiscountPageLayout.createSequentialGroup()
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 475, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         PaymentPane.add(DiscountPage, "card4");
@@ -1461,11 +1779,11 @@ public class MainPage extends javax.swing.JFrame {
         IMS.setLayout(IMSLayout);
         IMSLayout.setHorizontalGroup(
             IMSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1213, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         IMSLayout.setVerticalGroup(
             IMSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 571, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         MenuPanels.add(IMS, "card3");
@@ -1477,11 +1795,11 @@ public class MainPage extends javax.swing.JFrame {
         ADM.setLayout(ADMLayout);
         ADMLayout.setHorizontalGroup(
             ADMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1213, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         ADMLayout.setVerticalGroup(
             ADMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 571, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         MenuPanels.add(ADM, "card4");
@@ -1493,11 +1811,11 @@ public class MainPage extends javax.swing.JFrame {
         SET.setLayout(SETLayout);
         SETLayout.setHorizontalGroup(
             SETLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1213, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         SETLayout.setVerticalGroup(
             SETLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 571, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         MenuPanels.add(SET, "card5");
@@ -1521,7 +1839,7 @@ public class MainPage extends javax.swing.JFrame {
             BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BackgroundLayout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(BackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BackgroundLayout.createSequentialGroup()
                         .addComponent(POSButton, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1684,6 +2002,11 @@ public class MainPage extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        String itemName = "PILLOWS";
+        int itemQty = 1;
+        double itemPrice = 10.50;
+
+        updateItem(itemName, itemQty, itemPrice,jButton3);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
@@ -1705,10 +2028,11 @@ public class MainPage extends javax.swing.JFrame {
         ItemSummary.setVisible(true);
         PaymentMethod.setVisible(false);
     }//GEN-LAST:event_jButton41ActionPerformed
-
+    
     private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
         Cash.setVisible(false);
         Payment.setVisible(true);
+        
     }//GEN-LAST:event_jButton42ActionPerformed
 
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
@@ -1720,6 +2044,556 @@ public class MainPage extends javax.swing.JFrame {
         Payment.setVisible(false);
     }//GEN-LAST:event_jButton58ActionPerformed
 
+    private JTextArea findJTextArea2(JPanel jPanel6) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    private JTextField findJTextField2(JPanel jPanel6) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    private static class PaymentMethod {
+
+        public PaymentMethod() {
+        }
+
+        private void setJTextArea3Text(String text) {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+    }
+
+    private static class jTextArea5 {
+
+        private static void setText(String text) {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
+        public jTextArea5() {
+        }
+    }
+    class Item {
+    String itemName;
+    int itemQty;
+    double itemPrice;
+
+    public Item(String itemName, int itemQty, double itemPrice) {
+        this.itemName = itemName;
+        this.itemQty = itemQty;
+        this.itemPrice = itemPrice;
+    }
+}
+
+// Declare a list to store items
+    private List <Item> itemList = new ArrayList<>();
+    private int jButton2QtyCounter = 1;
+    private int jButton9QtyCounter = 1;
+    private int jButton10QtyCounter = 1;
+    
+    private void updateTextFieldWithItemInfo() {
+    StringBuilder entry = new StringBuilder();
+    double subTotal = 0.0;
+    
+    for (Item item : itemList) {
+        entry.append("Item Name: ").append(item.itemName)
+                .append("\nItem Qty.: ").append(item.itemQty)
+                .append("\nPrice: P ").append(item.itemPrice)
+                .append("\n\n"); // Separate each item with two newlines
+        subTotal += item.itemPrice;
+    }
+    
+    double vatRate = 0.12;
+    double vat = subTotal * vatRate;
+    double total = subTotal + vat;
+    double change;
+    
+    jTextArea1.setText(""); // Clear existing text
+    jTextArea1.append(entry.toString());
+    
+    String formattedVatRate = String.format("%.0f%%", vatRate * 100);
+    
+    jTextArea2.setText("                     Sub-Total: P " + String.format("%.2f",subTotal)
+        + "         \n                     VAT " + formattedVatRate + ": P " + String.format("%.2f",vat)
+        +   "       \n                             "
+        + "         \n                     Total: P " + String.format("%.2f",(subTotal - vat)));
+    
+    jTextArea4.setText(jTextArea2.getText());
+}
+    
+    private void updateItem(String itemName, int itemQty, double itemPrice ,JButton button) {
+      
+    // Check if the item with the same name already exists in the list
+    for (Item item : itemList) {
+        if (item.itemName.equals(itemName)) {
+            // If found, update its quantity and price
+            item.itemQty += itemQty;
+            item.itemPrice += (itemPrice + itemQty);
+            updateTextFieldWithItemInfo();
+            return;
+        }
+    }
+
+    // If the item is not in the list, add a new item
+        itemList.add(new Item(itemName, itemQty, itemPrice + itemQty));
+        updateTextFieldWithItemInfo();   
+}
+    private void clearItems(){
+        itemList.clear();
+        updateTextFieldWithItemInfo();
+    }
+    
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "PIATTOS";
+        int itemQty = 1;
+        double itemPrice = 34.55;
+
+    updateItem(itemName, itemQty, itemPrice, jButton2);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "NOVA";
+    int itemQty = 1;
+    double itemPrice = 35.50;
+
+    updateItem(itemName, itemQty, itemPrice,jButton9);
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "VCUT";
+        int itemQty = 1;
+        double itemPrice = 32.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton10);
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "LAYS";
+        int itemQty = 1;
+        double itemPrice = 162.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton4);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "CHEETOS";
+        int itemQty = 1;
+        double itemPrice = 144.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton5);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "SWEET CORN";
+        int itemQty = 1;
+        double itemPrice = 130.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton6);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "TOMI";
+        int itemQty = 1;
+        double itemPrice = 27.75;
+
+        updateItem(itemName, itemQty, itemPrice,jButton7);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "NAGARAYA";
+        int itemQty = 1;
+        double itemPrice = 25.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton8);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "DINGDONG";
+        int itemQty = 1;
+        double itemPrice = 64.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton11);
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "BOY BAWANG";
+        int itemQty = 1;
+        double itemPrice = 41.50;
+
+        updateItem(itemName, itemQty, itemPrice,jButton12);
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "CRACKLING";
+        int itemQty = 1;
+        double itemPrice = 58.50;
+
+        updateItem(itemName, itemQty, itemPrice,jButton13);
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "MONSTER";
+        int itemQty = 1;
+        double itemPrice = 58.50;
+
+        updateItem(itemName, itemQty, itemPrice,jButton14);
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "BANG Power Drink";
+        int itemQty = 1;
+        double itemPrice = 78.50;
+
+        updateItem(itemName, itemQty, itemPrice,jButton15);
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "POCARI SWEAT";
+        int itemQty = 1;
+        double itemPrice = 57.25;
+
+        updateItem(itemName, itemQty, itemPrice,jButton16);
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "ROYAL";
+        int itemQty = 1;
+        double itemPrice = 20.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton17);
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "SPRITE";
+        int itemQty = 1;
+        double itemPrice = 82.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton18);
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "TROPICANA";
+        int itemQty = 1;
+        double itemPrice = 28.50;
+
+        updateItem(itemName, itemQty, itemPrice,jButton19);
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "SMART - C";
+        int itemQty = 1;
+        double itemPrice = 30.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton20);
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "MINUTE MAID";
+        int itemQty = 1;
+        double itemPrice = 16.20;
+
+        updateItem(itemName, itemQty, itemPrice,jButton21);
+    }//GEN-LAST:event_jButton21ActionPerformed
+
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "AIR PURIFIER";
+        int itemQty = 1;
+        double itemPrice = 999.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton22);
+    }//GEN-LAST:event_jButton22ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "MOP";
+        int itemQty = 1;
+        double itemPrice = 899.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton23);
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "CASSEROLE";
+        int itemQty = 1;
+        double itemPrice = 999.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton24);
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "POT BUNDLE";
+        int itemQty = 1;
+        double itemPrice = 799.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton25);
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "DISH WASHING LIQUID";
+        int itemQty = 1;
+        double itemPrice = 322.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton26);
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "CUTTING BOARD";
+        int itemQty = 1;
+        double itemPrice = 250.50;
+
+        updateItem(itemName, itemQty, itemPrice,jButton27);
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "SCRUB";
+        int itemQty = 1;
+        double itemPrice = 12.50;
+
+        updateItem(itemName, itemQty, itemPrice,jButton28);
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "CARPET";
+        int itemQty = 1;
+        double itemPrice = 999.75;
+
+        updateItem(itemName, itemQty, itemPrice,jButton29);
+    }//GEN-LAST:event_jButton29ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "PLASTIC CONTAINERS";
+        int itemQty = 1;
+        double itemPrice = 130;
+
+        updateItem(itemName, itemQty, itemPrice,jButton30);
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "KLEENEX TISSUE PAPER";
+        int itemQty = 1;
+        double itemPrice = 99.50;
+
+        updateItem(itemName, itemQty, itemPrice,jButton31);
+    }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "HANGER";
+        int itemQty = 1;
+        double itemPrice = 120.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton32);
+    }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "KNIVES";
+        int itemQty = 1;
+        double itemPrice = 629.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton33);
+    }//GEN-LAST:event_jButton33ActionPerformed
+
+    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "BABY SOCKS";
+        int itemQty = 1;
+        double itemPrice = 24.25;
+
+        updateItem(itemName, itemQty, itemPrice,jButton34);
+    }//GEN-LAST:event_jButton34ActionPerformed
+
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "BABY SHOES";
+        int itemQty = 1;
+        double itemPrice = 108.50;
+
+        updateItem(itemName, itemQty, itemPrice,jButton35);
+    }//GEN-LAST:event_jButton35ActionPerformed
+
+    private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "BABY STROLLER";
+        int itemQty = 1;
+        double itemPrice = 995.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton46);
+    }//GEN-LAST:event_jButton46ActionPerformed
+
+    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "BABY CRIB";
+        int itemQty = 1;
+        double itemPrice = 995.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton47);
+    }//GEN-LAST:event_jButton47ActionPerformed
+
+    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "BABY SOAP";
+        int itemQty = 1;
+        double itemPrice = 127.75;
+
+        updateItem(itemName, itemQty, itemPrice,jButton48);
+    }//GEN-LAST:event_jButton48ActionPerformed
+
+    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "BABY CLOTHES";
+        int itemQty = 1;
+        double itemPrice = 170.50;
+
+        updateItem(itemName, itemQty, itemPrice,jButton49);
+    }//GEN-LAST:event_jButton49ActionPerformed
+
+    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "BABY BOTTLES";
+        int itemQty = 1;
+        double itemPrice = 238.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton50);
+    }//GEN-LAST:event_jButton50ActionPerformed
+
+    private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "BABY TEETHER";
+        int itemQty = 1;
+        double itemPrice = 148.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton51);
+    }//GEN-LAST:event_jButton51ActionPerformed
+
+    private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "HUGGIES BABY DIAPER";
+        int itemQty = 1;
+        double itemPrice = 429.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton52);
+    }//GEN-LAST:event_jButton52ActionPerformed
+
+    private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "BABY SPOON";
+        int itemQty = 1;
+        double itemPrice = 60.75;
+
+        updateItem(itemName, itemQty, itemPrice,jButton53);
+    }//GEN-LAST:event_jButton53ActionPerformed
+
+    private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "BABY MILK";
+        int itemQty = 1;
+        double itemPrice = 650.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton55);
+    }//GEN-LAST:event_jButton55ActionPerformed
+
+    private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
+        // TODO add your handling code here:
+        String itemName = "BABY TOYS";
+        int itemQty = 1;
+        double itemPrice = 225.00;
+
+        updateItem(itemName, itemQty, itemPrice,jButton56);
+    }//GEN-LAST:event_jButton56ActionPerformed
+    private double totalPrice = 0.00;
+    private double change = 0.00;
+    
+    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+        // TODO add your handling code here:
+        double price = 100.00;
+        totalPrice += price;
+        updateTotalAndChange();
+    }//GEN-LAST:event_jButton43ActionPerformed
+
+    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+        // TODO add your handling code here:
+        double price = 200.00;
+        totalPrice += price;
+        updateTotalAndChange();
+    }//GEN-LAST:event_jButton44ActionPerformed
+
+    private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
+        // TODO add your handling code here:
+        double price = 500.00;
+        totalPrice += price;
+        updateTotalAndChange();
+    }//GEN-LAST:event_jButton45ActionPerformed
+
+    private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
+        // TODO add your handling code here:
+        double price = 1000.00;
+        totalPrice += price;
+        updateTotalAndChange();
+    }//GEN-LAST:event_jButton54ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+        try {
+        double userInput = Double.parseDouble(jTextField1.getText().trim());
+        totalPrice = userInput;
+        updateTotalAndChange();
+    } catch (NumberFormatException e) {
+        JOptionPane.showMessageDialog(this, "Invalid input. Please enter a valid number.", "Error", JOptionPane.ERROR_MESSAGE);
+        jTextField1.setText("");
+    }
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void updateTotalAndChange() {
+        double changeValue = calculateChange();
+    jTextField1.setText(String.format("Total: %.2f%nChange: %.2f", totalPrice, calculateChange()));
+}
+
+private double calculateChange() {
+    double total = extractTotalFromTextArea2();
+    return total - totalPrice;
+}
+
+private double extractTotalFromTextArea2() {
+    try {
+        String text = jTextArea2.getText();
+        int totalIndex = text.indexOf("Total: P ") + "Total: P ".length();
+        int endIndex = text.indexOf("\n", totalIndex);
+        String totalString = text.substring(totalIndex, endIndex).trim();
+        return Double.parseDouble(totalString);
+    } catch (NumberFormatException | IndexOutOfBoundsException e) {
+        e.printStackTrace();
+        return 0.0;
+    }
+}
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -1863,6 +2737,13 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JButton jSnacks;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

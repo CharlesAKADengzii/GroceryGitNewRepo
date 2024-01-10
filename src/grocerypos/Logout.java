@@ -12,6 +12,8 @@ import javax.swing.JOptionPane;
  */
 public class Logout extends javax.swing.JFrame {
 
+    private static final long serialVersionUID = 1L;
+
     /**
      * Creates new form Logout
      */
@@ -121,10 +123,8 @@ public class Logout extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Logout().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Logout().setVisible(true);
         });
     }
 
