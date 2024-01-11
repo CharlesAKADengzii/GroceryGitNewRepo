@@ -2607,7 +2607,6 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton54ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
         try {
         double userInput = Double.parseDouble(jTextField1.getText().trim());
         totalPrice = userInput;
@@ -2618,6 +2617,7 @@ public class MainPage extends javax.swing.JFrame {
     }
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         new Logout().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -2671,7 +2671,10 @@ public class MainPage extends javax.swing.JFrame {
 
 private double calculateChange() {
     double total = extractTotalFromTextArea2();
-    return total - totalPrice;
+    double vatRate = 0.12;
+    double vat = total * vatRate;
+    double subTotal = total - vat;
+    return subTotal - totalPrice;
 }
 
 private double extractTotalFromTextArea2() {
