@@ -151,7 +151,8 @@ public class Confirm extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        this.dispose();
-       new MainPage().setVisible(true);
+        Order_Success_Window orderSuccessWindow = new Order_Success_Window();
+        orderSuccessWindow.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
