@@ -36,7 +36,7 @@ public class MainPage extends javax.swing.JFrame {
      */
     public MainPage() {
         initComponents();
-        
+        setResizable(false);
     }
     
 
@@ -161,6 +161,7 @@ public class MainPage extends javax.swing.JFrame {
         jPanel10 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jButton59 = new javax.swing.JButton();
+        Receipt = new javax.swing.JPanel();
         IMS = new javax.swing.JPanel();
         ADM = new javax.swing.JPanel();
         SET = new javax.swing.JPanel();
@@ -1261,7 +1262,7 @@ public class MainPage extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton36)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton38)
                 .addGap(0, 0, 0)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1334,7 +1335,7 @@ public class MainPage extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane3)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
@@ -1542,8 +1543,8 @@ public class MainPage extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addComponent(jLabel10)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE))
+                        .addGap(0, 12, Short.MAX_VALUE))
+                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -1598,7 +1599,7 @@ public class MainPage extends javax.swing.JFrame {
                     .addGroup(PaymentLayout.createSequentialGroup()
                         .addGap(21, 21, 21)
                         .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 22, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         PaymentLayout.setVerticalGroup(
             PaymentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1741,6 +1742,19 @@ public class MainPage extends javax.swing.JFrame {
         );
 
         PaymentPane.add(DiscountPage, "card4");
+
+        javax.swing.GroupLayout ReceiptLayout = new javax.swing.GroupLayout(Receipt);
+        Receipt.setLayout(ReceiptLayout);
+        ReceiptLayout.setHorizontalGroup(
+            ReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        ReceiptLayout.setVerticalGroup(
+            ReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        PaymentPane.add(Receipt, "card5");
 
         javax.swing.GroupLayout POSLayout = new javax.swing.GroupLayout(POS);
         POS.setLayout(POSLayout);
@@ -1996,6 +2010,7 @@ public class MainPage extends javax.swing.JFrame {
         SETButton.setIcon(icon3);
         
         new AdminPanel().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_ADMButtonActionPerformed
 
     private void SETButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SETButtonActionPerformed
@@ -2117,8 +2132,8 @@ public class MainPage extends javax.swing.JFrame {
     
     double vatRate = 0.12;
     double vat = subTotal * vatRate;
-    double total = subTotal - vat;
-    double change = total - totalPrice;
+    double total = subTotal + vat;
+    double change;
     
     jTextArea1.setText(""); // Clear existing text
     jTextArea1.append(entry.toString());
@@ -2598,13 +2613,8 @@ public class MainPage extends javax.swing.JFrame {
 }
 
 private double calculateChange() {
-    
     double total = extractTotalFromTextArea2();
-    double vatRate = 0.12;
-    double vat = total * vatRate;
-    double subTotal = total - vat;
-    return subTotal - totalPrice;
-
+    return total - totalPrice;
 }
 
 private double extractTotalFromTextArea2() {
@@ -2679,6 +2689,7 @@ private double extractTotalFromTextArea2() {
     private javax.swing.JPanel PaymentMethod;
     private javax.swing.JLayeredPane PaymentPane;
     private javax.swing.JLayeredPane ProductPanels;
+    private javax.swing.JPanel Receipt;
     private javax.swing.JPanel SET;
     private javax.swing.JButton SETButton;
     private javax.swing.JPanel SnacksPage;
