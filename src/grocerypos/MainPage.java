@@ -133,7 +133,6 @@ public class MainPage extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jButton60 = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
@@ -1309,25 +1308,13 @@ public class MainPage extends javax.swing.JFrame {
         jTextArea1.setMargin(getInsets());
         jScrollPane2.setViewportView(jTextArea1);
 
-        jButton60.setBackground(new java.awt.Color(226, 92, 92));
-        jButton60.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
-        jButton60.setText("X"); // NOI18N
-        jButton60.setToolTipText("");
-        jButton60.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton60ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(48, 48, 48)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton60, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(254, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
@@ -1335,10 +1322,6 @@ public class MainPage extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 531, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton60, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jScrollPane1.setViewportView(jPanel5);
@@ -1808,7 +1791,7 @@ public class MainPage extends javax.swing.JFrame {
                         .addComponent(ProductPanels, javax.swing.GroupLayout.PREFERRED_SIZE, 781, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PaymentPane)
-                .addGap(354, 354, 354))
+                .addGap(279, 279, 279))
         );
         POSLayout.setVerticalGroup(
             POSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2680,37 +2663,6 @@ public class MainPage extends javax.swing.JFrame {
                                
     }//GEN-LAST:event_jButton38ActionPerformed
 
-    private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
-      removeRecentItemFromTextField1();
-    }//GEN-LAST:event_jButton60ActionPerformed
-
-  private void removeRecentItemFromTextField1() {
-    String currentText = jTextField1.getText().trim();
-
-    // Check if there are any items in the text field
-    if (!currentText.isEmpty()) {
-        // Split the text into items using the comma and space as a delimiter
-        String[] items = currentText.split(", ");
-
-        // Check if there is more than one item
-        if (items.length > 1) {
-            // Reconstruct the text with the last item removed
-            StringBuilder newText = new StringBuilder();
-            for (int i = 0; i < items.length - 1; i++) {
-                if (i > 0) {
-                    newText.append(", ");
-                }
-                newText.append(items[i]);
-            }
-
-            // Update jTextField1 with the modified text
-            jTextField1.setText(newText.toString());
-        } else {
-            // If there's only one item, clear the text field
-            jTextField1.setText("");
-        }
-    }
-}
     
     private void updateTotalAndChange() {
         double changeValue = calculateChange();
@@ -2856,7 +2808,6 @@ private double extractTotalFromTextArea2() {
     private javax.swing.JButton jButton58;
     private javax.swing.JButton jButton59;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton60;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;

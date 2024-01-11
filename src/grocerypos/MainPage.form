@@ -277,7 +277,7 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="PaymentPane" max="32767" attributes="0"/>
-                          <EmptySpace min="-2" pref="354" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="279" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2123,9 +2123,7 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                                          <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton60" min="-2" pref="50" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane2" min="-2" pref="298" max="-2" attributes="0"/>
                                           <EmptySpace pref="254" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -2135,11 +2133,6 @@
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jScrollPane2" min="-2" pref="531" max="-2" attributes="0"/>
                                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton60" min="-2" pref="309" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -2169,21 +2162,6 @@
                                     </Component>
                                   </SubComponents>
                                 </Container>
-                                <Component class="javax.swing.JButton" name="jButton60">
-                                  <Properties>
-                                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                      <Color blue="5c" green="5c" red="e2" type="rgb"/>
-                                    </Property>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Arial" size="36" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="X" noResource="true"/>
-                                    <Property name="toolTipText" type="java.lang.String" value=""/>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton60ActionPerformed"/>
-                                  </Events>
-                                </Component>
                               </SubComponents>
                             </Container>
                           </SubComponents>
