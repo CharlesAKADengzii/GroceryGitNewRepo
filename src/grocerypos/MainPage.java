@@ -2103,8 +2103,8 @@ public class MainPage extends javax.swing.JFrame {
     
     double vatRate = 0.12;
     double vat = subTotal * vatRate;
-    double total = subTotal + vat;
-    double change;
+    double total = subTotal - vat;
+    double change = total - totalPrice;
     
     jTextArea1.setText(""); // Clear existing text
     jTextArea1.append(entry.toString());
@@ -2576,8 +2576,13 @@ public class MainPage extends javax.swing.JFrame {
 }
 
 private double calculateChange() {
+    
     double total = extractTotalFromTextArea2();
-    return total - totalPrice;
+    double vatRate = 0.12;
+    double vat = total * vatRate;
+    double subTotal = total - vat;
+    return subTotal - totalPrice;
+
 }
 
 private double extractTotalFromTextArea2() {
